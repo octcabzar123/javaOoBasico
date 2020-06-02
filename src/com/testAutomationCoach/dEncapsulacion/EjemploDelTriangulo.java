@@ -1,6 +1,4 @@
-package com.testAutomationCoach.dEncapsulacion;
-
-import libs.Input;
+package dEncapsulacion;
 
 public class EjemploDelTriangulo {
 
@@ -11,7 +9,5 @@ public class EjemploDelTriangulo {
 		System.out.println("El perimetro es " + t.sacarPerimetro());
 		System.out.println(t);
 		
-		Input.print(Double.MAX_VALUE + "\n");
-		Input.print(Float.MAX_VALUE);
 	}
 }

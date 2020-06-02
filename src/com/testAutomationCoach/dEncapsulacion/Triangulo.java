@@ -1,10 +1,10 @@
-package com.testAutomationCoach.dEncapsulacion;
+package dEncapsulacion;
 
 public class Triangulo {
 	
 	//propiedades o campos
-	private int base;
-	private int altura;
+	private double base;
+	private double altura;
 	
 	public Triangulo(int base, int altura) {
 		this.base = base;
@@ -12,16 +12,16 @@ public class Triangulo {
 	}
 	
 	//metodos o comportamiento
-	public int sacarArea() {
-		int area= (this.base*this.altura)/2;
+	public double sacarArea() {
+		double area= (this.base*this.altura)/2;
 		return area;
 	}
-	public int sacarPerimetro() {
-		int perimetro= this.base*3;
+	public double sacarPerimetro() {
+		double perimetro= this.base+this.altura+Math.sqrt(Math.pow(base, 2)+Math.pow(altura, 2));
 	    return perimetro;	
 	}
 
-	public int getBase() {
+	public double getBase() {
 		return base;
 	}
 
@@ -29,7 +29,7 @@ public class Triangulo {
 		this.base = base;
 	}
 
-	public int getAltura() {
+	public double getAltura() {
 		return altura;
 	}
 
